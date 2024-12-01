@@ -1,7 +1,3 @@
-Sure! Here's a GitHub README template for your project about disrupting the bathroom industry at Memorial University of Newfoundland:
-
----
-
 # Disrupting the Bathroom Industry at Memorial University of Newfoundland
 
 ## 🚀 Project Overview
@@ -110,5 +106,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 We would like to thank Memorial University of Newfoundland for their support and all the students and staff who contributed their valuable feedback to make this project possible.
 
 ---
-
-Let me know if you'd like to tweak any part of it!
