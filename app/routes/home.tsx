@@ -1,20 +1,24 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
-import Navbar from "../navbar";
-import BathroomMap from "../map";
+import Navbar from "../components/navbar";
+import BathroomMap from "../components/map";
+import Reviews from "../components/reviews";
+import Filter from "../components/filter";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "MUN Bathrooms" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
 export default function Home() {
   return (
-    <div className="w-screen h-[95vh] p-0 m-0">
-      <div className="grid grid-rows-1 grid-cols-[32rem, 1fr] p-5 w-full h-full max-w-full max-h-full gap-5">
-        <Navbar />
+    <div className="w-screen h-screen max-w-screen max-h-screen p-0 m-0 flex flex-col">
+      <Navbar />
+      <div className="flex flex-row flex-grow">
+        <Filter />
+        <Reviews />
         <BathroomMap />
       </div>
     </div>

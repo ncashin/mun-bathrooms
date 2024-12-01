@@ -18,14 +18,23 @@ export default function BathroomMap() {
         center: [-52.73524876547014, 47.57383107463892], // starting position [lng, lat]
         zoom: 14, // starting zoom
         maplibreLogo: true,
+        attributionControl: false,
       });
+      map.current.resize();
     },
     [lng, lat, zoom]
   );
 
   return (
-    <div className="col-start-2 col-span-1 p-5 bg-yellow-50">
-      <div ref={initMap} className="w-full h-full" />
+    <div
+      className="w-60 h-full"
+      onResize={() => {
+        if (map.current) map.current.resize();
+      }}>
+      <div
+        ref={initMap}
+        className="min-w-0 min-h-0 w-full h-full max-w-full max-h-full container"
+      />
     </div>
   );
 }
