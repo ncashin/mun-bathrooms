@@ -10,5 +10,10 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
   plugins: [reactRouter(), tsconfigPaths()],
 });

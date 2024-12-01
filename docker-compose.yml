@@ -1,0 +1,10 @@
+services:
+  mun-bathrooms:
+    build: .
+    ports:
+      - 3000:3000
+    develop:
+      watch:
+        - action: rebuild
+          path: .
+          target: /app
