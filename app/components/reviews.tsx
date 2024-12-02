@@ -1,4 +1,15 @@
-import { Star, StarHalf } from "lucide-react";
+import {
+  Clock,
+  Group,
+  GroupIcon,
+  MapPin,
+  MartiniIcon,
+  PinIcon,
+  Star,
+  StarHalf,
+  UsersRound,
+} from "lucide-react";
+import { Marker } from "maplibre-gl";
 
 const bathrooms = [
   {
@@ -31,7 +42,6 @@ export default function Reviews() {
                 <h1 className="text-black text-lg font-semibold">
                   {bathroom.title}
                 </h1>
-                <p className="text-sm pt-0.5">{bathroom.roomCode}</p>
               </div>
               <div className="flex flex-row gap-5 ">
                 <div className="flex flex-row mt-auto mb-auto">
@@ -87,12 +97,28 @@ export default function Reviews() {
               </div>
 
               <div className="flex flex-row gap-5">
-                <p>Fisherman's Wharf</p>
-                <li>4.4 (11.1k reviews)</li>
+                <div className="flex flex-row items-center">
+                  <MapPin size="18" />
+                  <p>{bathroom.roomCode}</p>
+                </div>
+                <div className="flex flex-row items-center gap-1">
+                  <li />
+                  <Clock size="18" color="green" />
+                  <p>
+                    Live Wait Time: {Math.floor(Math.random() * 30)} Minutes
+                  </p>
+                </div>
               </div>
               <div className="flex flex-row gap-5">
-                <p>Family Owned and Operated</p>
-                <li>Full bar</li>
+                <div className="flex flex-row items-center">
+                  <UsersRound size="20" />
+                  <p>Family Owned and Operated</p>
+                </div>
+                <div className="flex flex-row items-center justify-start">
+                  <li />
+                  <MartiniIcon size="20" />
+                  <p>Full Bar</p>
+                </div>
               </div>
               <div className="flex flex-row gap-5">
                 <p className="font-light text-sm">
