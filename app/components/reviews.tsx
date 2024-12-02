@@ -4,6 +4,8 @@ import {
   GroupIcon,
   MapPin,
   MartiniIcon,
+  MessageCircleIcon,
+  MessageSquare,
   PinIcon,
   Star,
   StarHalf,
@@ -120,7 +122,8 @@ export default function Reviews() {
                   <p>Full Bar</p>
                 </div>
               </div>
-              <div className="flex flex-row gap-5">
+              <div className="flex flex-row ">
+                <MessageSquare style={{ transform: "scaleX(-1)" }} size="18" />
                 <p className="font-light text-sm">
                   "Testimonial goes here" - John Bathroom
                 </p>
