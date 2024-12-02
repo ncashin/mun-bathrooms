@@ -8,7 +8,7 @@ import Filter from "../components/filter";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "MUN Bathrooms" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "MUN Bathrooms" },
   ];
 }
 
