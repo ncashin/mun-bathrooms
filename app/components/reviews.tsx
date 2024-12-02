@@ -105,7 +105,7 @@ export default function Reviews() {
                 </div>
                 <div className="flex flex-row items-center gap-1">
                   <li />
-                  <Clock size="18" color="green" />
+                  <Clock size="18" />
                   <p>
                     Live Wait Time: {Math.floor(Math.random() * 30)} Minutes
                   </p>
